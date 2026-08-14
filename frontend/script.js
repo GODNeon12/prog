@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!payload.prompt) return;
 
         try {
-            const resp = await fetch('http://localhost:8080/api/generate', {
+            const resp = await fetch('/api/generate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
