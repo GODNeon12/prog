@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WaygroundX – Script Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>WaygroundX Script Generator</h1>
+
+    <form id="promptForm">
+        <label for="prompt">Describe the script you need:</label>
+        <textarea id="prompt" rows="6" placeholder="E.g. “Create a Python script that reads a CSV and prints the sum of column 2.”" required></textarea>
+        <button type="submit">Generate</button>
+    </form>
+
+    <section id="outputSection" class="hidden">
+        <h2>Generated Script</h2>
+        <pre id="scriptResult"></pre>
+        <button id="copyBtn">Copy to clipboard</button>
+    </section>
+
+    <section id="errorSection" class="hidden error">
+        <h2>Error</h2>
+        <p id="errorMessage"></p>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

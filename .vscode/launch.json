@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WaygroundApplication<wayground>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.wayground.WaygroundApplication",
+            "projectName": "wayground",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

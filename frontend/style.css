@@ -1,0 +1,47 @@
+/* Simple responsive layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f7f9fc;
+    color: #222;
+    min-height: 100vh;
+}
+.container {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+h1, h2 { margin-top: 0; }
+form { display: flex; flex-direction: column; gap: .5rem; }
+textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: .95rem;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+button {
+    align-self: flex-start;
+    padding: .5rem 1rem;
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover { background: #0055aa; }
+pre {
+    background: #f0f0f0;
+    padding: .8rem;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.hidden { display: none; }
+.error { color: #b00; }
